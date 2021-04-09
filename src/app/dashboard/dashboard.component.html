@@ -1,0 +1,9 @@
+<h1>End Game</h1>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div>
+
+<app-hero-search></app-hero-search>
